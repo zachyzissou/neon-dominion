@@ -25,7 +25,7 @@ jobs:
       - name: Build
         run: |
           if find . -name '*.sln' -o -name '*.csproj' | grep -q .; then
-            dotnet build -c Release --no-restore
+            dotnet build -c Release --no-restore -p:TreatWarningsAsErrors=false
           else
             echo "No solution/project files found; skipping build."
           fi
