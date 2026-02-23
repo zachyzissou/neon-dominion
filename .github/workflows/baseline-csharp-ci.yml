@@ -1,0 +1,38 @@
+name: baseline-csharp-ci
+
+on:
+  push:
+    branches: ['main', 'master']
+  pull_request:
+    branches: ['main', 'master']
+
+jobs:
+  baseline-csharp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Restore
+        run: |
+          if find . -name '*.sln' -o -name '*.csproj' | grep -q .; then
+            dotnet restore
+          else
+            echo "No solution/project files found; skipping restore."
+          fi
+      - name: Build
+        run: |
+          if find . -name '*.sln' -o -name '*.csproj' | grep -q .; then
+            dotnet build -c Release --no-restore
+          else
+            echo "No solution/project files found; skipping build."
+          fi
+      - name: Test
+        run: |
+          if find . -name '*.sln' -o -name '*.csproj' | grep -q .; then
+            dotnet test -c Release --no-build
+          else
+            echo "No solution/project files found; skipping tests."
+          fi
