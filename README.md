@@ -1,10 +1,9 @@
 # neon-dominion
 
 > Unity 6 tactical simulation game prototype exploring Dominion-style systems and sector control gameplay.
-> Status: `active`
+> Status: `Production` (actively maintained)
 
-![CI](https://img.shields.io/github/actions/workflow/status/zachyzissou/neon-dominion/baseline-csharp-ci.yml)
-![Coverage](https://img.shields.io/badge/coverage-70%25-brightgreen)
+![CI](https://github.com/zachyzissou/neon-dominion/actions/workflows/baseline-csharp-ci.yml/badge.svg?branch=main)
 ![License](https://img.shields.io/github/license/zachyzissou/neon-dominion)
 ![Security](https://img.shields.io/badge/security-SECURITY.md-green)
 
@@ -63,7 +62,6 @@ dotnet test
 dotnet test
 ```
 
-Coverage goal: 70% minimum for touched areas.
 
 ## Security
 - Report issues via `SECURITY.md`.
@@ -77,7 +75,7 @@ Coverage goal: 70% minimum for touched areas.
 4. Request review and obtain approval before merge
 
 ## Deployment / runbook
-- Deployment target: default branch ` main `
+- Deployment target: default branch `main`
 - Rollback: revert commit and redeploy previous release/tag
 - Emergency: pause workflows and disable risky automation if needed
 
