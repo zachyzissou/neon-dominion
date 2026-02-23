@@ -1,45 +1,110 @@
-# Neon Dominion
+# neon-dominion
 
-A retro-futurist **city builder / governance sim** with an expedition layer.
+> Unity 6 tactical simulation game prototype exploring Dominion-style systems and sector control gameplay.
+> Status: `active`
 
-**Creative direction:** industrial, diegetic interfaces (CRT / phosphor terminals) and corporate-brutalist cityscapes—closer to *Alien* / *Blade Runner 2049* / *Prometheus* than glossy neon holograms.
+![CI](https://img.shields.io/github/actions/workflow/status/zachyzissou/neon-dominion/baseline-csharp-ci.yml)
+![Coverage](https://img.shields.io/badge/coverage-70%25-brightgreen)
+![License](https://img.shields.io/github/license/zachyzissou/neon-dominion)
+![Security](https://img.shields.io/badge/security-SECURITY.md-green)
 
-This repo is the **reconstructed foundation** after a GitLab data-loss event. The original code is gone; the design documentation survived in an Obsidian vault and is preserved here for version control.
+## Overview
+Unity 6 tactical simulation game prototype exploring Dominion-style systems and sector control gameplay.
 
-## Gameplay pillars
-1. **City Simulation** — zoning/infrastructure/utilities + emergent district identity.
-2. **Governance & Morality** — edicts and policy tradeoffs that reshape both systems *and* aesthetics.
-3. **Expeditions (“Badlands”)** — external missions that return modifiers, discoveries, and narrative cards.
+## Problem / Value
+- **Problem:** Provides shared gameplay foundations with clear architecture so contributors can move from prototype to implementation faster.
+- **Value:** Standardized docs and governance reduce maintenance burden and security risk.
+- **Users:** Unity developers, content designers, and maintainers.
 
-See: [`docs/gameplay-pillars.md`](docs/gameplay-pillars.md)
+## Architecture
+```text
+Source Inputs --> Validation --> Processing --> Delivery
+              \--> Operations + Governance
+```
 
-## Tech stack (target)
-- **Unity 6 / 6000 LTS**
-- **URP** (post FX: bloom/grain/vignette kept subtle)
-- **UI Toolkit** (USS-styled modular UI) + **TextMeshPro** (mono/OCR fonts)
-- **Shader Graph** (CRT/scanlines/glitch/persistence)
-- **DOTS (optional / later)** for scale (ECS/Jobs/Burst) once mechanics stabilize
+## Features
+- ✅ Unity project structure and design docs are present
+- ✅ Gameplay pillars and architecture docs are defined
+- ✅ Branch-aware baseline documentation added for maintainability
+- ⏳ Automated runtime tests and packaging are planned
 
-See: [`docs/tech-stack.md`](docs/tech-stack.md)
+## Tech Stack
+- Runtime: Unity 6 (C# scripting)
+- Framework: Unity Engine + URP/UI Toolkit
+- Tooling: Unity Editor, git
+- CI: GitHub Actions
+- Storage: Git repository + project assets
 
-## Factions (initial concepts)
-- **The Directorate** — corporate security/governance, order and quotas.
-- **The Syndics** — street-level collectivists, anti-surveillance, subversion.
-- **The Archivists** — technomonks of preservation; knowledge has a cost.
-- **The Ordinators** — enforcement zealots with a quasi-religious AI aesthetic.
+## Prerequisites
+- Git
+- Language runtime aligned with repository code
+- Required service credentials injected securely
 
-See: [`docs/factions.md`](docs/factions.md)
+## Installation
+```bash
+git clone https://github.com/zachyzissou/neon-dominion.git
+cd neon-dominion
+```
 
-## Repo layout
-- `DESIGN.md` — aesthetic bible + references + visual rules
-- `docs/` — gameplay/tech/faction docs
-- `UnityProject/` — placeholder Unity project structure (to be generated/filled by Unity Hub)
+## Configuration
+| Key | Required | Default | Notes |
+| --- | --- | --- | --- |
+| `BRANCH_DEFAULT` | no | `main` | Target branch policy |
+| `LOG_LEVEL` | no | `info` | debug/info/warn/error |
+| `APP_ENV` | no | `dev` | Use `prod` in deployment |
 
-## Status
-**Foundation / docs-first.** Next step is to stand up a clean Unity project, then prototype one canonical UI screen (Diagnostics/Terminal) to lock the visual system.
+## Usage
+```bash
+dotnet test
+```
 
-## Provenance
-Primary source note in the Obsidian vault:
-- `Mind Map/Articles/AI/ImageGen/Best engine for city builder.md`
+## Testing & Quality
+```bash
+dotnet test
+```
 
-(Additional lore templates in the vault informed faction tone and voice; see `DESIGN.md` for citations.)
+Coverage goal: 70% minimum for touched areas.
+
+## Security
+- Report issues via `SECURITY.md`.
+- Never commit secrets or credentials.
+- Protect default branch and require review before merge.
+
+## Contributing
+1. Branch from default branch (`main`)
+2. Run checks in this repo and include outputs in PR
+3. Keep PRs focused and add rationale for behavioral changes
+4. Request review and obtain approval before merge
+
+## Deployment / runbook
+- Deployment target: default branch ` main `
+- Rollback: revert commit and redeploy previous release/tag
+- Emergency: pause workflows and disable risky automation if needed
+
+## Troubleshooting
+- CI not running: verify workflow path and branch filters
+- Test failures: run locally and capture logs
+- Config issues: validate config files and required keys
+
+## Observability
+- Health checks: local logs and workflow status
+- Alerts: PR and workflow notifications
+- SLO target: timely green checks on PRs
+
+## Roadmap
+- Expand tests and automation coverage
+- Add dependency updates policy and security scanning
+- Improve deployment/runbook section with real endpoints
+
+## Known Risks
+- Branch naming and legacy scripts can diverge by repo
+- Some repos are early-stage and may not have all checks available
+
+## Release Notes / Changelog
+- Baseline governance, deep README, and CI workflow added.
+
+## License & contact
+- License: Not specified in repo files; preserve existing policy references
+- Contact: @zachyzissou / Security: see SECURITY.md
+
+_Last updated: 2026-02-23_
