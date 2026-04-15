@@ -5,7 +5,8 @@ All rights reserved.
 
 ## Grant of access
 You may view and read this source code solely for personal reference.
-This limited grant includes only temporary or local copying technically necessary to access, download, clone, cache, store, and display the source code for that personal-reference purpose.
+This limited grant includes only the technical copying necessary to access, download, clone, cache, store, and display the source code for that personal-reference purpose.
+Any local copy (including a repository clone) must be used only for personal reference under these terms.
 
 ## No permission granted
 Except for the limited right to view and read the source code, and to make the minimal technical copies permitted above solely for that purpose, no other rights are granted.
@@ -19,7 +20,8 @@ Without prior written permission from Zach Gonser, you may not:
 
 ## Contributions
 Unless explicitly agreed otherwise in writing, any contribution, patch, pull request, or suggestion submitted for this repository may be rejected and does not grant you any rights to this codebase.
-If you submit a contribution that is accepted into this repository, you represent that you have the necessary rights to submit it and you grant Zach Gonser a perpetual, irrevocable, worldwide, non-exclusive, royalty-free right to use, copy, reproduce, modify, adapt, create derivative works from, publicly display, distribute, sublicense, and otherwise exploit that contribution as part of this codebase and in related works.
+If you submit a contribution that is accepted into this repository, you represent that you have the necessary rights to submit it.
+For accepted contributions, you grant Zach Gonser a perpetual, irrevocable, worldwide, non-exclusive, royalty-free right to use, copy, reproduce, modify, adapt, create derivative works from, publicly display, distribute, sublicense, and otherwise exploit that contribution as part of this codebase and in related works.
 
 ## Trademark and branding
 No trademark, service mark, trade name, logo, or brand feature license is granted.
