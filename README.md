@@ -1,5 +1,5 @@
 > **License Notice**
-> This repository is source-visible only. You may read the source for personal reference, including only the minimal technical copying needed to access/view it. Any other copying, modification, redistribution, deployment, or commercial use requires prior written permission from Zach Gonser. See `LICENSE` for details.
+> This repository is source-visible only. Use is restricted and requires prior written permission from Zach Gonser except as expressly allowed in `LICENSE`.
 
 # neon-dominion
 
