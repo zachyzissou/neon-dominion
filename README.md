@@ -1,3 +1,6 @@
+> **License Notice**
+> This repository is source-visible only. Use is restricted and requires prior written permission from Zach Gonser except as expressly allowed in `LICENSE`.
+
 # neon-dominion
 
 > Unity 6 tactical simulation game prototype exploring Dominion-style systems and sector control gameplay.
@@ -40,10 +43,7 @@ Source Inputs --> Validation --> Processing --> Delivery
 - Required service credentials injected securely
 
 ## Installation
-```bash
-git clone https://github.com/zachyzissou/neon-dominion.git
-cd neon-dominion
-```
+Local setup or execution is not permitted without prior written permission from Zach Gonser.
 
 ## Configuration
 | Key | Required | Default | Notes |
@@ -53,14 +53,10 @@ cd neon-dominion
 | `APP_ENV` | no | `dev` | Use `prod` in deployment |
 
 ## Usage
-```bash
-dotnet test
-```
+Running this code is not permitted without prior written permission from Zach Gonser.
 
 ## Testing & Quality
-```bash
-dotnet test
-```
+Automated checks are restricted to authorized maintainers and approved workflows.
 
 
 ## Security
@@ -102,7 +98,7 @@ dotnet test
 - Baseline governance, deep README, and CI workflow added.
 
 ## License & contact
-- License: Not specified in repo files; preserve existing policy references
+- License: `LICENSE` (source-visible terms; all rights reserved except limited personal-reference access)
 - Contact: @zachyzissou / Security: see SECURITY.md
 
 _Last updated: 2026-02-23_
